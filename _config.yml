@@ -55,8 +55,12 @@ footer-links:
 # 站点页脚的文字
 footer-text: Copyright (c) 2019 来自中世界
 
-# 输入Disqus shortname，即可添加评论区，细节可阅读文档。
-disqus: # loffer 
+# 输入Gitalk相关设定，即可添加评论区，具体请看教程
+gitalk:
+  clientID: 945b4797d665a9a3676f
+  clientSecret: 7f19b7c22c732df6874c482e432fd9330dd09767
+  repo: roulan2000.github.io
+  owner: roulan2000
 
 # 输入Google Analytics web tracking code
 # google_analytics:
