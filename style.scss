@@ -531,12 +531,12 @@ nav {
 // TOC
 
 .toc {
-  width: 240px;
+  width: 220px;
   height: 100%;
   left: 20%;
-  position: relative;
+  position: fixed;
   z-index: 4;
-  padding: 60px 20px 0 20px;
+  padding: 60px 0 0 20px;
   overflow-y: auto;
   
   &:before{
