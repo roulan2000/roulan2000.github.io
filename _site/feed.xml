@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://roulan2000.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://roulan2000.github.io/" rel="alternate" type="text/html" /><updated>2021-02-03T00:45:17+08:00</updated><id>http://roulan2000.github.io/feed.xml</id><title type="html">MEOWORLD</title><subtitle>一场盛大的冒险</subtitle><entry><title type="html">MEOWORLD建设历程</title><link href="http://roulan2000.github.io/document/" rel="alternate" type="text/html" title="MEOWORLD建设历程" /><published>2021-02-02T00:00:00+08:00</published><updated>2021-02-02T00:00:00+08:00</updated><id>http://roulan2000.github.io/document</id><content type="html" xml:base="http://roulan2000.github.io/document/">&lt;p&gt;本文记录了使用githubpages搭建博客的开荒历程。&lt;/p&gt;
+
+&lt;p&gt;欢迎大家到&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;jekyll的模版网站&lt;/a&gt;上挑选心仪的模版。&lt;/p&gt;
+
+&lt;h2 id=&quot;使用githubpages搭建博客&quot;&gt;使用githubpages搭建博客&lt;/h2&gt;
+
+&lt;p&gt;MEOWORLD使用的模版是&lt;a href=&quot;https://github.com/FromEndWorld/LOFFER&quot;&gt;LOFFER&lt;/a&gt; 并且进行了大量魔改。&lt;/p&gt;
+
+&lt;p&gt;LOFFER的作者提供了几乎不需要代码基础就可以配置博客的教程，非常值得一试。&lt;/p&gt;
+
+&lt;p&gt;其中一个关键步骤是修改_config.yml，注意在url后面写入你的网站名。&lt;/p&gt;
+
+&lt;h2 id=&quot;在windows上运行jekyll&quot;&gt;在windows上运行jekyll&lt;/h2&gt;
+
+&lt;p&gt;有了jekyll之后就可以直接在本地预览网页的效果，而不再需要上传到github之后再等待约10min才能看到修改结果。&lt;/p&gt;
+
+&lt;p&gt;在摸了半天坑以后，我主要参考&lt;a href=&quot;https://www.cnblogs.com/xjtu-blacksmith/p/install-jekyll-on-windows.html&quot;&gt;这篇博客&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;简单来说是先下载&lt;a href=&quot;https://rubyinstaller.org/downloads/&quot;&gt;Rubyinstaller&lt;/a&gt; ，注意这里&lt;strong&gt;一定要安装完整的三个组件&lt;/strong&gt;，否则后续安装jekyll时会报错。&lt;/p&gt;
+
+&lt;p&gt;然后就都是命令行操作了，首先&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem install jekyll bundler&lt;/code&gt;，然后&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem install githubpages&lt;/code&gt;（这个可能不是必要的步骤）,需要等待相当的时间才能安装完毕。&lt;/p&gt;
+
+&lt;p&gt;接下来cd到你存放有_config.yml等一系列文件的文件夹中，然后&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll server&lt;/code&gt;，如果一切顺利，你直接在浏览器里输入地址就可以看到网页了。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;如果没有顺利运行，那么恭喜你！你遇到大麻烦了！&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/roulan2000/roulan2000.github.io/main/images/jekyllbugs1.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;借助bundle-debug&quot;&gt;借助bundle debug&lt;/h3&gt;
+
+&lt;p&gt;为了debug，我cd到合适的位置，命令行输入&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll new testblog&lt;/code&gt;，创建一个新的文件夹，然后cd进去，再次输入&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll server&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/roulan2000/roulan2000.github.io/main/images/jekyllbugs2.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这里出现了一行非常关键的报错&lt;strong&gt;cannot load such file – webrick&lt;/strong&gt;，通过搜索引擎我找到了&lt;a href=&quot;https://github.com/jekyll/jekyll/issues/8523&quot;&gt;解决方法&lt;/a&gt;，输入&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle add webrick&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;然后再次&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;就成功运行了testblog。&lt;/p&gt;
+
+&lt;p&gt;接下来我们cd回到个人博客的文件夹再次&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;，就运行成功啦！&lt;/p&gt;
+
+&lt;h2 id=&quot;魔改记录&quot;&gt;魔改记录&lt;/h2&gt;
+
+&lt;h3 id=&quot;界面布局&quot;&gt;界面布局&lt;/h3&gt;
+
+&lt;p&gt;因为深感导航栏占据屏幕面积太大，不方便阅读，所以改窄了一些。这一部分修改都在style.scss文件夹中。我改动了wrapper-sidebar和wrapper-conten所占的百分比，然后修改了toc的部分属性使目录能够保持紧贴左侧。相应地，我还修改了头像图片大小site-avatar，和nav中的文字大小。&lt;/p&gt;
+
+&lt;h3 id=&quot;配色&quot;&gt;配色&lt;/h3&gt;
+
+&lt;p&gt;还没动手，以后再说&lt;/p&gt;</content><author><name>蘼芜秋兰</name></author><category term="教程" /><category term="记录" /><summary type="html">本文记录了使用githubpages搭建博客的开荒历程。 欢迎大家到jekyll的模版网站上挑选心仪的模版。 使用githubpages搭建博客 MEOWORLD使用的模版是LOFFER 并且进行了大量魔改。 LOFFER的作者提供了几乎不需要代码基础就可以配置博客的教程，非常值得一试。 其中一个关键步骤是修改_config.yml，注意在url后面写入你的网站名。 在windows上运行jekyll 有了jekyll之后就可以直接在本地预览网页的效果，而不再需要上传到github之后再等待约10min才能看到修改结果。 在摸了半天坑以后，我主要参考这篇博客 简单来说是先下载Rubyinstaller ，注意这里一定要安装完整的三个组件，否则后续安装jekyll时会报错。 然后就都是命令行操作了，首先gem install jekyll bundler，然后gem install githubpages（这个可能不是必要的步骤）,需要等待相当的时间才能安装完毕。 接下来cd到你存放有_config.yml等一系列文件的文件夹中，然后jekyll server，如果一切顺利，你直接在浏览器里输入地址就可以看到网页了。 如果没有顺利运行，那么恭喜你！你遇到大麻烦了！ 借助bundle debug 为了debug，我cd到合适的位置，命令行输入jekyll new testblog，创建一个新的文件夹，然后cd进去，再次输入jekyll server 这里出现了一行非常关键的报错cannot load such file – webrick，通过搜索引擎我找到了解决方法，输入bundle add webrick 然后再次jekyll serve就成功运行了testblog。 接下来我们cd回到个人博客的文件夹再次jekyll serve，就运行成功啦！ 魔改记录 界面布局 因为深感导航栏占据屏幕面积太大，不方便阅读，所以改窄了一些。这一部分修改都在style.scss文件夹中。我改动了wrapper-sidebar和wrapper-conten所占的百分比，然后修改了toc的部分属性使目录能够保持紧贴左侧。相应地，我还修改了头像图片大小site-avatar，和nav中的文字大小。 配色 还没动手，以后再说</summary></entry></feed>

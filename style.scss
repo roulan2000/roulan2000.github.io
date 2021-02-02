@@ -362,8 +362,8 @@ img {
   .site-avatar {
     margin:0 auto;
     display: block;
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 120px;
+    max-height: 120px;
 
     @include mobile {
       max-width: 120px;
@@ -383,7 +383,7 @@ img {
   cursor: pointer;
   font-family: $base-font;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 24px;
   letter-spacing: 1px;
 }
 
@@ -414,7 +414,7 @@ nav {
   }
 
   a {
-    margin: 0 6px;
+    margin: 0 3px;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
@@ -531,7 +531,7 @@ nav {
 // TOC
 
 .toc {
-  width: 180px;
+  width: 200px;
   height: 100%;
   left: 15%;
   position: fixed;
@@ -543,7 +543,7 @@ nav {
     content:"目录";
     margin: 0 0 1em 1em;
     font-weight: 700;
-    font-size: 1em;
+    font-size: 1.2em;
     display: block;
     padding-bottom: 0.6em;
     border-bottom: 3px double $divider-color;
