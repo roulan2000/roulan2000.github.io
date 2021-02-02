@@ -29,7 +29,7 @@ LOFFER的作者提供了几乎不需要代码基础就可以配置博客的教�
 
 简单来说是先下载Rubyinstaller ，注意这里一定要安装完整的三个组件，否则后续安装jekyll时会报错。
 
-然后就都是命令行操作了，首先gem install jekyll bundler，然后gem install githubpages（这个可能不是必要的步骤）,需要等待相当的时间才能安装完毕。
+然后就都是命令行操作了，首先gem install jekyll bundler，然后gem install githubpages（这个可能不是必要的步骤），需要等待相当的时间才能安装完毕。
 
 接下来cd到你存放有_config.yml等一系列文件的文件夹中，然后jekyll server，如果一切顺利，你直接在浏览器里输入地址就可以看到网页了。
 
@@ -56,6 +56,8 @@ LOFFER的作者提供了几乎不需要代码基础就可以配置博客的教�
 因为深感导航栏占据屏幕面积太大，不方便阅读，所以改窄了一些。这一部分修改都在style.scss文件夹中。我改动了wrapper-sidebar和wrapper-conten所占的百分比，然后修改了toc的部分属性使目录能够保持紧贴左侧。相应地，我还修改了头像图片大小site-avatar，和nav中的文字大小。
 
 配色
+
+需要修改_sass/_variables.scss，有亿点点复杂。
 
 还没动手，以后再说
 " />
@@ -79,7 +81,7 @@ LOFFER的作者提供了几乎不需要代码基础就可以配置博客的教�
 
 简单来说是先下载Rubyinstaller ，注意这里一定要安装完整的三个组件，否则后续安装jekyll时会报错。
 
-然后就都是命令行操作了，首先gem install jekyll bundler，然后gem install githubpages（这个可能不是必要的步骤）,需要等待相当的时间才能安装完毕。
+然后就都是命令行操作了，首先gem install jekyll bundler，然后gem install githubpages（这个可能不是必要的步骤），需要等待相当的时间才能安装完毕。
 
 接下来cd到你存放有_config.yml等一系列文件的文件夹中，然后jekyll server，如果一切顺利，你直接在浏览器里输入地址就可以看到网页了。
 
@@ -106,6 +108,8 @@ LOFFER的作者提供了几乎不需要代码基础就可以配置博客的教�
 因为深感导航栏占据屏幕面积太大，不方便阅读，所以改窄了一些。这一部分修改都在style.scss文件夹中。我改动了wrapper-sidebar和wrapper-conten所占的百分比，然后修改了toc的部分属性使目录能够保持紧贴左侧。相应地，我还修改了头像图片大小site-avatar，和nav中的文字大小。
 
 配色
+
+需要修改_sass/_variables.scss，有亿点点复杂。
 
 还没动手，以后再说
 " />
@@ -327,19 +331,19 @@ LOFFER的作者提供了几乎不需要代码基础就可以配置博客的教�
 
 <p>简单来说是先下载<a href="https://rubyinstaller.org/downloads/">Rubyinstaller</a> ，注意这里<strong>一定要安装完整的三个组件</strong>，否则后续安装jekyll时会报错。</p>
 
-<p>然后就都是命令行操作了，首先<code class="language-plaintext highlighter-rouge">gem install jekyll bundler</code>，然后<code class="language-plaintext highlighter-rouge">gem install githubpages</code>（这个可能不是必要的步骤）,需要等待相当的时间才能安装完毕。</p>
+<p>然后就都是命令行操作了，首先<code class="language-plaintext highlighter-rouge">gem install jekyll bundler</code>，然后<code class="language-plaintext highlighter-rouge">gem install githubpages</code>（这个可能不是必要的步骤），需要等待相当的时间才能安装完毕。</p>
 
 <p>接下来cd到你存放有_config.yml等一系列文件的文件夹中，然后<code class="language-plaintext highlighter-rouge">jekyll server</code>，如果一切顺利，你直接在浏览器里输入地址就可以看到网页了。</p>
 
 <p><strong>如果没有顺利运行，那么恭喜你！你遇到大麻烦了！</strong></p>
 
-<p><img src="https://raw.githubusercontent.com/roulan2000/roulan2000.github.io/main/images/jekyllbugs1.png" alt="img" /></p>
+<p><img src="https://raw.githubusercontent.com/roulan2000/roulan2000.github.io/main/images/jekyllbugs1.jpg" alt="img" /></p>
 
 <h3 id="借助bundle-debug">借助bundle debug</h3>
 
 <p>为了debug，我cd到合适的位置，命令行输入<code class="language-plaintext highlighter-rouge">jekyll new testblog</code>，创建一个新的文件夹，然后cd进去，再次输入<code class="language-plaintext highlighter-rouge">jekyll server</code></p>
 
-<p><img src="https://raw.githubusercontent.com/roulan2000/roulan2000.github.io/main/images/jekyllbugs2.png" alt="img" /></p>
+<p><img src="https://raw.githubusercontent.com/roulan2000/roulan2000.github.io/main/images/jekyllbugs2.jpg" alt="img" /></p>
 
 <p>这里出现了一行非常关键的报错<strong>cannot load such file – webrick</strong>，通过搜索引擎我找到了<a href="https://github.com/jekyll/jekyll/issues/8523">解决方法</a>，输入<code class="language-plaintext highlighter-rouge">bundle add webrick</code></p>
 
@@ -354,6 +358,8 @@ LOFFER的作者提供了几乎不需要代码基础就可以配置博客的教�
 <p>因为深感导航栏占据屏幕面积太大，不方便阅读，所以改窄了一些。这一部分修改都在style.scss文件夹中。我改动了wrapper-sidebar和wrapper-conten所占的百分比，然后修改了toc的部分属性使目录能够保持紧贴左侧。相应地，我还修改了头像图片大小site-avatar，和nav中的文字大小。</p>
 
 <h3 id="配色">配色</h3>
+
+<p>需要修改_sass/_variables.scss，有亿点点复杂。</p>
 
 <p>还没动手，以后再说</p>
 
