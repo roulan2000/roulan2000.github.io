@@ -13,6 +13,8 @@ description: 一场盛大的冒险
 # 下面的设定都是可选的
 #
 
+permalink: /404.html
+
 # 你的博客logo图片URL，建议尺寸不超过300px × 300px
 avatar: https://raw.githubusercontent.com/roulan2000/roulan2000.github.io/main/images/avatars.jpg
 
