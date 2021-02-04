@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://roulan2000.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://roulan2000.github.io/" rel="alternate" type="text/html" /><updated>2021-02-03T01:12:51+08:00</updated><id>http://roulan2000.github.io/feed.xml</id><title type="html">MEOWORLD</title><subtitle>一场盛大的冒险</subtitle><entry><title type="html">MEOWORLD建设历程</title><link href="http://roulan2000.github.io/document/" rel="alternate" type="text/html" title="MEOWORLD建设历程" /><published>2021-02-02T00:00:00+08:00</published><updated>2021-02-02T00:00:00+08:00</updated><id>http://roulan2000.github.io/document</id><content type="html" xml:base="http://roulan2000.github.io/document/">&lt;p&gt;本文记录了使用githubpages搭建博客的开荒历程。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://roulan2000.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://roulan2000.github.io/" rel="alternate" type="text/html" /><updated>2021-02-04T20:21:48+08:00</updated><id>http://roulan2000.github.io/feed.xml</id><title type="html">MEOWORLD</title><subtitle>一场盛大的冒险</subtitle><entry><title type="html">MEOWORLD建设实录</title><link href="http://roulan2000.github.io/document/" rel="alternate" type="text/html" title="MEOWORLD建设实录" /><published>2021-02-02T00:00:00+08:00</published><updated>2021-02-02T00:00:00+08:00</updated><id>http://roulan2000.github.io/document</id><content type="html" xml:base="http://roulan2000.github.io/document/">&lt;p&gt;本文记录了使用githubpages搭建博客的开荒历程。&lt;/p&gt;
 
 &lt;p&gt;欢迎大家到&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;jekyll的模版网站&lt;/a&gt;上挑选心仪的模版。&lt;/p&gt;
 
@@ -24,13 +24,13 @@
 
 &lt;p&gt;&lt;strong&gt;如果没有顺利运行，那么恭喜你！你遇到大麻烦了！&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/roulan2000/roulan2000.github.io/main/images/jekyllbugs1.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/&quot;&gt;&lt;img src=&quot;/images/jekyllbugs1.jpg&quot; class=&quot;center-image&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;借助bundle-debug&quot;&gt;借助bundle debug&lt;/h3&gt;
 
 &lt;p&gt;为了debug，我cd到合适的位置，命令行输入&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll new testblog&lt;/code&gt;，创建一个新的文件夹，然后cd进去，再次输入&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll server&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/roulan2000/roulan2000.github.io/main/images/jekyllbugs2.jpg&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/&quot;&gt;&lt;img src=&quot;/images/jekyllbugs2.jpg&quot; class=&quot;center-image&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;这里出现了一行非常关键的报错&lt;strong&gt;cannot load such file – webrick&lt;/strong&gt;，通过搜索引擎我找到了&lt;a href=&quot;https://github.com/jekyll/jekyll/issues/8523&quot;&gt;解决方法&lt;/a&gt;，输入&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle add webrick&lt;/code&gt;&lt;/p&gt;
 
