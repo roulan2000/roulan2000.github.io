@@ -8,7 +8,7 @@ comments: true
 toc: false
 pinned: true
 ---
-首尾歌词出自**《繁华唱遍》** 
+首尾歌词出自**《繁华唱遍》** 。
 
 <center><font color=Navy><blod>
 行越远越不敢回头细看<br>
