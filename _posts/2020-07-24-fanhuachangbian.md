@@ -6,7 +6,7 @@ author: 蘼芜秋兰
 tags: [记录]
 comments: true
 toc: false
-pinned: true
+pinned: false
 ---
 首尾歌词出自**《繁华唱遍》** 。
 

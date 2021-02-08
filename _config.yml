@@ -15,9 +15,9 @@ description: 一场盛大的冒险
 
 # 你的博客logo图片URL，建议尺寸不超过300px × 300px {site.baseurl}
 
-avatar: https://wx2.sinaimg.cn/mw690/a1e6ff37ly1gnbyj5iee7j20hr0hsjvk.jpg
+avatar: /images/avatars.jpg
 # 你的favicon（出现在浏览器tab上）图片URL，建议使用较小(64px × 64px)的图片
-favicon: https://wx1.sinaimg.cn/mw690/a1e6ff37ly1gnbtg6umq3j200w00w0gu.jpg
+favicon: /images/meow.png
 
 
 # 菜单中的按钮
