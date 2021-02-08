@@ -67,6 +67,21 @@ LOFFER的作者提供了几乎不需要代码基础就可以配置博客的教�
 
 此处显示画师茨乃的p站id是67388，虽然p站里没有这张小焰的图片，但是画风依稀可辨。
 
+插入图片
+
+如果用github做图床，尽量用相对地址插入图片，比如/images/xxx.jpg。
+
+起初我发现手机和ipad无法正常显示图片，而电脑看是正常的。询问众多大佬，结论是dns的问题。电脑正常是因为我一般都挂梯子……
+
+域名raw.githubusercontent.com在国内是无法解析的，可以通过挂梯子或者修改host文件解决。用F12看的话会发现报错ERR_NAME_NOT_RESOLVED（可恶，手机和ipad都没有F12）。
+
+参考这篇知乎文章，我在host文件里加了下面四行（2021.2.9）。
+
+140.82.113.3      github.com 
+185.199.108.153   assets-cdn.github.com 
+199.232.69.194    github.global.ssl.fastly.net
+199.232.96.133    raw.githubusercontent.com
+
 " />
     <meta property="og:description" content="本文记录了使用githubpages搭建博客的开荒历程。
 
@@ -125,6 +140,21 @@ LOFFER的作者提供了几乎不需要代码基础就可以配置博客的教�
 后来我多次尝试用以图搜图的方式寻找原始图片，得到了一些线索。
 
 此处显示画师茨乃的p站id是67388，虽然p站里没有这张小焰的图片，但是画风依稀可辨。
+
+插入图片
+
+如果用github做图床，尽量用相对地址插入图片，比如/images/xxx.jpg。
+
+起初我发现手机和ipad无法正常显示图片，而电脑看是正常的。询问众多大佬，结论是dns的问题。电脑正常是因为我一般都挂梯子……
+
+域名raw.githubusercontent.com在国内是无法解析的，可以通过挂梯子或者修改host文件解决。用F12看的话会发现报错ERR_NAME_NOT_RESOLVED（可恶，手机和ipad都没有F12）。
+
+参考这篇知乎文章，我在host文件里加了下面四行（2021.2.9）。
+
+140.82.113.3      github.com 
+185.199.108.153   assets-cdn.github.com 
+199.232.69.194    github.global.ssl.fastly.net
+199.232.96.133    raw.githubusercontent.com
 
 " />
     
@@ -285,6 +315,7 @@ LOFFER的作者提供了几乎不需要代码基础就可以配置博客的教�
         <ul>
           <li><a href="#界面布局">界面布局</a></li>
           <li><a href="#配色">配色</a></li>
+          <li><a href="#插入图片">插入图片</a></li>
         </ul>
       </li>
     </ul>
@@ -383,6 +414,21 @@ LOFFER的作者提供了几乎不需要代码基础就可以配置博客的教�
 
 <p>此处显示<a href="https://www.pixiv.net/users/67388/">画师茨乃</a>的p站id是67388，虽然p站里没有这张小焰的图片，但是画风依稀可辨。</p>
 
+<h3 id="插入图片">插入图片</h3>
+
+<p>如果用github做图床，尽量用<strong>相对地址</strong>插入图片，比如/images/xxx.jpg。</p>
+
+<p>起初我发现手机和ipad无法正常显示图片，而电脑看是正常的。询问众多大佬，结论是dns的问题。电脑正常是因为我一般都挂梯子……</p>
+
+<p>域名raw.githubusercontent.com在国内是无法解析的，可以通过挂梯子或者修改host文件解决。用F12看的话会发现报错<strong>ERR_NAME_NOT_RESOLVED</strong>（可恶，手机和ipad都没有F12）。</p>
+
+<p><a href="https://zhuanlan.zhihu.com/p/75994966">参考这篇知乎文章</a>，我在host文件里加了下面四行（2021.2.9）。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>140.82.113.3      github.com 
+185.199.108.153   assets-cdn.github.com 
+199.232.69.194    github.global.ssl.fastly.net
+199.232.96.133    raw.githubusercontent.com
+</code></pre></div></div>
 
   </div>
 
