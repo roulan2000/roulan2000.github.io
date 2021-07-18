@@ -61,7 +61,7 @@ gitalk:
   clientSecret: 7f19b7c22c732df6874c482e432fd9330dd09767
   repo: roulan2000.github.io
   owner: roulan2000
-  proxy: https://netnr-proxy.cloudno.de/https://github.com/login/oauth/access_token
+  #proxy: https://netnr-proxy.cloudno.de/https://github.com/login/oauth/access_token
 
 
 # 输入Google Analytics web tracking code
