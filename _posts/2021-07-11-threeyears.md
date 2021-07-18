@@ -110,3 +110,5 @@ Let us dream on, dream on
 
 [<img src="{{ site.baseurl }}/images/GPA.jpg"  style="width: 800px;"/>{: .center-image}]({{ site.baseurl }}/)
 
+[<img src="{{ site.baseurl }}/images/vx20210715.jpg"  style="width: 250px;"/>{: .center-image}]({{ site.baseurl }}/)
+
