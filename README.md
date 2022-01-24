@@ -7,3 +7,5 @@
 ### 博客主题
 
 本站使用的Jekyll主题是[LOFFER](https://fromendworld.github.io/LOFFER/)，并进行了大量魔改。向原作者表示感谢！
+
+### LOG
